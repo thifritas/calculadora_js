@@ -1,5 +1,6 @@
 function insere(numero){
-    document.getElementById('resultado').innerHTML = numero;
+    var valor = document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = valor + numero;
 }
 
 function limpar(){
@@ -17,6 +18,6 @@ function calcular(){
         document.getElementById('resultado').innerHTML = eval(resultado);
     }
     else {
-        document.getElementById('resultado').innerHTML = "Vazio";
+        document.getElementById('resultado').innerHTML = "Indefinido ...";
     }
 }
